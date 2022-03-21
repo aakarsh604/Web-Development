@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+    <style>
+
+        * {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            height: 90px;
+            width: 75%;
+            border: 1px solid blue;
+            margin: auto;
+            margin-top: 60px;
+            border-radius: 8px;
+            background-color: #1c2938;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .container > div {
+            /* border : 1px solid white; */
+            display: flex;
+            justify-content: space-evenly;
+            color: white;
+            padding: 20px;
+        }
+
+        .container > div:nth-child(1){
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .container > div:nth-child(2){
+            width: 400px;
+            font-weight:200;
+        }
+
+        select {
+            background-color: #1c2938;
+            border: 1px solid #1c2938;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>MEGAWIDTH</div>
+        <div>
+            <div>Home</div>
+            <div>About</div>
+            <div>Blog</div>
+            <div>Page<select name="" id=""></select></div>
+        </div>
+    </div>
+</body>
+</html>

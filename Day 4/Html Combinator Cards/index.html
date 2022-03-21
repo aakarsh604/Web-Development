@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Combinator Cards</title>
+    <style>
+
+        * {
+            font-family: Arial, sans-serif
+        }
+        .container {
+            height:700px;
+            width: 70%;
+            /* border: 1px solid black; */
+            margin: auto;
+        }
+
+     .container > div {
+         height: 48%;
+         width: 100%;
+         /* border: 1px solid grey; */
+         display: flex;
+         margin-top: 30px;
+     }
+
+     .container > div > div {
+         height: 100%;
+         width: 31%;
+         /* border: 1px solid black; */
+         margin: auto;
+     }
+
+     img {
+         width: 100%;
+         height: 175px;
+     }
+
+     h2 {
+        padding: 15px;
+        margin: auto;
+     }
+
+     p { 
+         padding: 6px;
+         border-left: 3px solid red;
+         line-height: 0px;
+         margin-left: 15px;
+         color: grey;
+     }
+
+     .en {
+         margin-top: 42px;
+     }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtzoKWH1jqps1Vg1Bi_2M9K6ufEeY5ttanFw&usqp=CAU" alt="">
+                    <h2>UK and US join forces to strike back in cyber-space</h2>
+                    <p>TECHNOLOGY</p>
+                </div>
+                <div>
+                    <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaD8mxQ9SN1CKV8Dtu2J2hcwueGwrQzkbk8g&usqp=CAU alt="">
+                    <h2>Lady Gaga took personal trauma into Gucci role</h2>
+                    <p class="en">ENTERTAINMENT & ARTS</p>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMfg4xlLTC-CE-bCPgX9YDgA-lyh76Vhqwfw&usqp=CAU" alt="">
+                    <h2>The mothers using Instagram to offer advice to new mums and dads</h2>
+                    <p>BUSINESS</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7guY7-c_XD8nEhlOPxNJHQjUmGY2Uh-GVkg&usqp=CAU"  alt="">
+                    <h2>'I've seen irreversible change but hope too for planet'</h2>
+                    <p>SCIENCE & ENVIRONMENT</p>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3f-Ub1ElV0L6ukAQ5-EgDHMiyxfkCL7pyr2LRDThpnlGcWg4SqRflscH4JjUBxWpRlC4&usqp=CAU" alt="">
+                    <h2>Full force of Covid hitting Germany, warns Merkel</h2>
+                    <p class="en">EUROPE</p>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr4k8ZiTauKCqv4lS5QIySV0VrsTOHrDkFdw&usqp=CAU" alt="">
+                    <h2>Baby elephant dies after losing half its trunk</h2>
+                    <p class="en">ASIA</p>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

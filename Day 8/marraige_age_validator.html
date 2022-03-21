@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Validator</title>
+</head>
+<body>
+    <input id="input" type="number" placeholder="enter year of birth">
+        <select name="" id="gender">
+            <option value="Male">M</option>
+            <option value="Female">F</option>
+        </select>
+        <button onclick="ageCheck()">Check Eligibility</button>
+</body>
+</html>
+
+<script>
+        function ageCheck () {
+
+        var gender = document.getElementById("gender").value;
+        var age = 2022 - document.getElementById("input").value;
+
+        if ( gender == "Male" && age >= 21  || gender == "Female" && age >= 18 )
+        {
+            alert("Valid Age to get Married");
+        } else {
+            alert("Invalid Age to get Married");
+        }
+        }
+</script>

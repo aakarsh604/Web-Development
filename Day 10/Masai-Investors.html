@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masai Investors</title>
+    <style>
+        * {
+            font-family: arial;
+        }
+      .heading {
+        text-align: center;
+        margin-top: 20px;
+        font-family: arial;
+      }
+
+      #main {
+        width: 80%;
+        margin: auto;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        gap: 10px;
+        /* align-items: center;
+        justify-content: center; */
+      }
+
+      .imges {
+        height: 190px;
+        width: 195px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+      }
+
+      .names {
+          font-size: 15px;
+          text-align: center;
+      }
+
+      .logo {
+          height: 30px;
+          width: auto;
+          display: block;
+          margin: auto;
+          margin-top: -5px;
+      }
+
+      .role {
+          font-size: 12px;
+          text-align: center;
+          margin-top: -5px;
+          color: grey;
+      }
+    </style>
+  </head>
+  <body></body>
+</html>
+
+<script>
+  var data = [
+    {
+      name: "Vijay Shekhar Sharma",
+      image:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg",
+      companyLogo:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+      role: "Co-Founder & CEO",
+    },
+    {
+      name: "Kunal Shah",
+      image:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png",
+      companyLogo:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png",
+      role: "Founder",
+    },
+    {
+      name: "Amrish Rau",
+      image:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg",
+      companyLogo:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/pine_labs_0aa2407434.png",
+      role: "CEO",
+    },
+    {
+      name: "Sampad Swain",
+      image:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/Sampad_swain_Instamojo_f12bf6341e.jpg",
+      companyLogo:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/instamojo_8763e704f7.png",
+      role: "Co-Founder & CEO",
+    },
+  ];
+
+  var heading = document.createElement("h2");
+  heading.innerText = "Strategic Investors";
+  heading.setAttribute("class", "heading");
+  document.querySelector("body").append(heading);
+
+  var maindiv = document.createElement("div");
+  document.querySelector("body").append(maindiv);
+  maindiv.setAttribute("id", "main");
+
+  data.map(function (el) {
+    var divs = document.createElement("div");
+
+    var images = document.createElement("img");
+    images.src = el.image;
+    images.setAttribute("class", "imges");
+
+    var name = document.createElement("h3");
+    name.innerText = el.name;
+    name.setAttribute("class", "names");
+
+    var comprole = document.createElement("p");
+    comprole.innerText = el.role;
+    comprole.setAttribute("class", "role");
+
+    var complogo = document.createElement("img");
+    complogo.src = el.companyLogo;
+    complogo.setAttribute("class", "logo");
+
+    document.querySelector("#main").append(divs);
+    divs.append(images, name, comprole, complogo);
+  });
+</script>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Child</title>
+
+    <style>
+      /* selector1 selector2 */
+      /* child selector - > */
+      #child1 > p {
+        /* select all p's which are childs of #child1 */
+        background-color: red;
+      }
+
+      .pet>h1 {
+        /* select all h1's which are childs of .pet */
+        background-color: teal;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="child1">
+        <p>I am P1</p>
+        <p>I am p2</p>
+      </div>
+      <div id="child2">
+        <div>
+          <p>I am p3</p>
+          <span>
+            <p>I am p5</p>
+          </span>
+        </div>
+      </div>
+    </div>
+    <p>I am p4</p>
+
+    <div class="pet">
+      <h1>I am tommy</h1>
+      <p>I am cherry</p>
+      <div>
+        <h1>I am tommy child</h1>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+<!-- child is only one generation below 
+descendant is all generations below to it -->

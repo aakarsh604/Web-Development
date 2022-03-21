@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zig-Zag Grid</title>
+
+    <style>
+      .container {
+        height: 500px;
+        width: 50%;
+        margin: auto;
+        margin-top: 100px;
+        display: grid;
+        gap: 50px 35px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+      }
+
+      .container > div {
+        background-color: #217867;
+        border-radius: 5px;
+        display: flex;
+      }
+
+      .container > div:nth-child(2) {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        box-sizing: border-box;
+        width: 415px;
+        margin-left: 13px;
+      }
+
+      .container > div:nth-child(4) {
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+
+      .container > div:nth-child(9) {
+        grid-column-start: 3;
+        grid-column-end: 6;
+        box-sizing: border-box;
+        width: 400px;
+        margin-left: 60px;
+      }
+
+      .container > div:nth-child(7) {
+        margin-right: -30px;
+      }
+
+      .container > div:nth-child(8) {
+        box-sizing: border-box;
+        margin-left: 30px;
+        margin-right: -50px;
+      }
+
+
+    </style>
+    j
+  </head>
+  <body>
+    <div class="container">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>

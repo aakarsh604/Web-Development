@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* general sibling selector - ~ */
+      #para ~ p {
+        /* select all p's which are general siblings of #para */
+        background-color: yellow;
+      }
+
+      #para + p {
+        /* select all p's which are general siblings of #para */
+        background-color: red;
+      }
+
+      #para ~ h1 {
+        /* select all h1's which are general siblings of #para */
+        background-color: teal;
+      }
+
+      /* adjacent sibling -> + */
+
+      h5 + p {
+        background: pink;
+      }
+
+      /* remeber this thing */
+
+      p + h3 {
+        /* select all h3's which are adjacent sibling to p */
+        background: pink;
+      }
+
+      #container + div{
+              background-color:yellow
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <!-- <p id="para">P1</p>
+      <p>P2</p>
+      <p>p3</p>
+      <h1>I am h1</h1>
+      <h5>I am h5</h5>
+      <p>I am p4</p>
+      <div>
+        <p>I am p5</p>
+        <h3>I am h3</h3>
+      </div> -->
+    </div>
+    <div>
+        i am div
+        <p>I am para inside div</p>
+    </div>
+
+    
+    
+  </body>
+</html>
+
+<!-- siblings are of same generation -->

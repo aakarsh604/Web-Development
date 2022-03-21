@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resposive Pricing layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Roboto", sans-serif;
+      }
+
+      .container {
+        width: 65%;
+        height: 650px;
+        margin: auto;
+        margin-top: 40px;
+      }
+
+      .container > h1 {
+        text-align: center;
+        line-height: 60px;
+        width: 65%;
+        margin: auto;
+        color: #19304b;
+        font-size: 40px;
+      }
+
+      .container > p {
+        text-align: center;
+        width: 70%;
+        margin: auto;
+        padding: 20px;
+        line-height: 25px;
+        color: rgb(78, 78, 78);
+      }
+
+      .container > div {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 380px);
+        grid-gap: 30px;
+      }
+
+      .container > div > div {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        text-align: center;
+        padding: 15px;
+      }
+
+      h3 {
+        color: #19304b;
+      }
+
+      h3 + h1 + p {
+        margin-top: -20px;
+        font-size: 14px;
+        color: grey;
+      }
+
+      div > div > p:last-of-type {
+        width: 76%;
+        font-size: 17px;
+        margin: auto;
+        margin-top: 30px;
+        color: grey;
+      }
+
+      button {
+        margin-top: 30px;
+        padding: 15px 45px;
+        border: 2px solid #007aff;
+        background-color: white;
+        color: #007aff;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      #start {
+        background-color: #007aff;
+        color: white;
+      }
+
+      #free {
+        color: #20b283;
+      }
+
+      #orange {
+        color: #f27e42;
+      }
+
+      #blue {
+        color: #007aff;
+      }
+
+      @media only screen and (min-width: 421px) and (max-width: 780px) {
+        
+        .container > div {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows:auto;
+            width: 90%;
+        }
+
+        .container  {
+          width: 95%;
+        }
+      }
+
+      @media only screen and (min-width: 70px) and (max-width: 420px) {
+
+        .container > div {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: auto;
+            width: 90%;
+        }
+
+        .container  {
+          width: 95%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Choose a plan that is right for your business</h1>
+      <p>
+        We collect reviews from our users so that you can get an honest opion of
+        what an experience with our website are really like!
+      </p>
+      <div>
+        <div>
+          <h3>Starter Plan</h3>
+          <h1 id="free">Free</h1>
+          <p><i>Per month</i></p>
+          <p>
+            We collect reviews from our users so that you can get an honest
+            opion of what an experience with our website.
+          </p>
+          <button>Start Now</button>
+        </div>
+        <div>
+          <h3>Business Plan</h3>
+          <h1 id="orange">$39.00</h1>
+          <p><i>Per month</i></p>
+          <p>
+            We collect reviews from our users so that you can get an honest
+            opion of what an experience with our website.
+          </p>
+          <button id="start">Start Now</button>
+        </div>
+        <div>
+          <h3>Premium Plan</h3>
+          <h1 id="blue">$59.00</h1>
+          <p><i>Per month</i></p>
+          <p>
+            We collect reviews from our users so that you can get an honest
+            opion of what an experience with our website.
+          </p>
+          <button>Start Now</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

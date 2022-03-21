@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exponent Calculator</title>
+</head>
+<body>
+        <input type="text" placeholder="enter a number">
+        <input type="text" placeholder="enter a number">
+        <p></p>
+        <hr>
+        <button >Click here to find the multiplication!</button>
+        <button id="e">Click here to find the exponent!</button>
+</body>
+</html>
+
+<script>
+
+    
+    document.querySelector("body> :nth-child(5)").addEventListener("click", multiplication);
+    function multiplication () {
+        var a = document.querySelector("body> :nth-child(1)").value;
+        var b = document.querySelector("body> :nth-child(2)").value;
+            alert(a * b);
+        }
+    
+    document.querySelector("body> :nth-child(6)").addEventListener("click", exponent);
+    function exponent () {
+        var a = document.querySelector("body> :nth-child(1)").value;
+        var b = document.querySelector("body> :nth-child(2)").value;
+        var bag = 1;
+        for ( i = 0 ; i < b ; i++ )
+        {
+                bag *= a;
+        }
+        document.querySelector("p").innerText = bag;
+        // console.log(bag);
+    }
+</script>

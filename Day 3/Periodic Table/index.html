@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Periodic Table</title>
+    <style>
+      * {
+        font-family: sans-serif;
+      }
+      h2 {
+        text-align: center;
+        font-weight: 450;
+        font-size: 30px;
+        margin-top: 45px;
+      }
+
+      .container {
+        height: 400px;
+        width: 69%;
+        /* border: 1px solid black; */
+        margin: auto;
+        margin-top: 40px;
+        display: flex;
+      }
+
+      .b1 {
+        height: 100%;
+        width: 18%;
+        /* border: 1px solid black; */
+      }
+
+      .b2 {
+        height: 100%;
+        width: 48%;
+        /* border: 1px solid black;  */
+      }
+
+      .b3 {
+        height: 100%;
+        width: 35%;
+        /* border: 1px solid black;  */
+      }
+
+      .b1r {
+        height: 40px;
+        width: 100%;
+        /* border: 1px solid grey; */
+        margin-top: 15px;
+        display: flex;
+      }
+
+      .b1c1 {
+        height: 100%;
+        width: 40px;
+        outline: 2px solid black;
+        margin-left: 15px;
+      }
+
+      .silicon {
+        height: 150px;
+        width: 150px;
+        border: 2px solid black;
+        margin-top: 15px;
+        padding: 10px;
+        box-sizing: border-box;
+        background-color: rgb(141, 180, 48);
+      }
+
+      .b2r {
+        /* border: 1px solid grey; */
+      }
+
+      .b2r2 {
+        height: 40px;
+        width: 100%;
+        /* border: 1px solid grey; */
+        margin-top: 15px;
+        display: flex;
+      }
+
+      .b1c2 {
+        height: 100%;
+        width: 40px;
+        outline: 2px solid black;
+        margin-left: 0px;
+      }
+
+      .space {
+        margin-left: 15px;
+      }
+
+      .b3r {
+        height: 40px;
+        width: 100%;
+        /* border: 1px solid grey; */
+        margin-top: 15px;
+        display: flex;
+      }
+
+      .margin {
+        margin-left: 275px;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+
+      .bottom-sec {
+        height: 70px;
+        width: 34%;
+        margin: auto;
+        /* border: 1px solid black; */
+        margin-top: 50px;
+      }
+
+      .btr {
+        height: 50%;
+        width: 100%;
+        /* border: 1px solid grey; */
+        display: flex;
+        margin: 2px;
+      }
+
+      .btc {
+        width: 7%;
+        height: 100%;
+        border: 1px solid rgb(89, 57, 116);
+      }
+
+      p {
+        text-align: center;
+      }
+
+      h1 {
+        font-weight: 450;
+        font-size: 60px;
+        margin-top: 10px;
+        margin-left: -5px;
+      }
+
+      #four {
+        margin-top: 0px;
+        text-align: right;
+      }
+
+      #sili {
+        margin-top: -35px;
+        margin-left: -80px;
+      }
+
+      #hu {
+        color: white;
+        font-size: 25px;
+        margin-top: 5px;
+      }
+
+      .la {
+        color: white;
+      }
+
+      .huw {
+        background-color: rgb(161, 10, 10);
+      }
+
+      .num {
+        background-color: rgb(230, 72, 98);
+      }
+
+      .green {
+        background-color: rgb(141, 180, 48);
+      }
+
+      .blue {
+        background-color: rgb(26, 26, 240);
+      }
+
+      .yellow {
+        background-color: rgb(255, 196, 35);
+      }
+
+      .grey {
+        background-color: rgb(79, 74, 109);
+      }
+
+      .dpink {
+        background-color: rgb(230, 0, 107);
+      }
+
+      .purple {
+        background-color: rgb(165, 1, 165);
+      }
+
+      .lgreen {
+        background-color: rgb(60, 148, 60);
+      }
+
+      .orange {
+        background-color: rgb(255, 102, 0);
+      }
+
+      .olive {
+        background-color: rgb(71, 88, 29);
+      }
+
+      .greenish {
+        background-color: rgb(131, 194, 80);
+      }
+
+      .dark {
+        outline: 4px solid black;
+        outline-offset: -4px;
+        background-color: wheat;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>THE PERIODIC TABLE OF ELEMENTS</h2>
+    <div class="container">
+      <div class="b1">
+        <div class="b1r">
+          <div class="b1c1 huw">
+            <p id="hu">H</p>
+          </div>
+        </div>
+        <div class="b1r">
+          <div class="b1c1 green"></div>
+          <div class="b1c1 num">
+            <p>4</p>
+          </div>
+        </div>
+        <div class="b1r">
+          <div class="b1c1 green"></div>
+          <div class="b1c1 num">
+            <p>12</p>
+          </div>
+        </div>
+        <div class="b1r">
+          <div class="b1c1 green"></div>
+          <div class="b1c1 num">
+            <p>20</p>
+          </div>
+        </div>
+        <div class="b1r">
+          <div class="b1c1 green"></div>
+          <div class="b1c1 num">
+            <p>38</p>
+          </div>
+        </div>
+        <div class="b1r">
+          <div class="b1c1 green"></div>
+          <div class="b1c1 num">
+            <p>56</p>
+          </div>
+          <div class="b1c1 dark"></div>
+        </div>
+        <div class="b1r">
+          <div class="b1c1 green"></div>
+          <div class="b1c1 num">
+            <p>88</p>
+          </div>
+          <div class="b1c1 dark"></div>
+        </div>
+      </div>
+      <div class="b2">
+        <div class="b2r">
+          <div class="silicon">
+            <p id="four">14</p>
+            <h1>Si</h1>
+            <p id="sili">Silicon</p>
+          </div>
+        </div>
+        <div class="b2r">
+          <div class="b2r2">
+            <div class="b1c2 blue"></div>
+            <div class="b1c2 space blue"></div>
+            <div class="b1c2 space blue"></div>
+            <div class="b1c2 space blue"></div>
+            <div class="b1c2 space blue"></div>
+            <div class="b1c2 space blue"></div>
+            <div class="b1c2 space blue"></div>
+            <div class="b1c2 space blue"></div>
+            <div class="b1c2 space blue"></div>
+          </div>
+          <div class="b2r2">
+            <div class="b1c2 blue"></div>
+            <div class="b1c2 space blue"></div>
+            <div class="b1c2 space blue"></div>
+            <div class="b1c2 space blue"></div>
+            <div class="b1c2 space blue"></div>
+            <div class="b1c2 space blue"></div>
+            <div class="b1c2 space blue"></div>
+            <div class="b1c2 space blue"></div>
+            <div class="b1c2 space blue"></div>
+          </div>
+          <div class="b2r2">
+            <div class="b1c2 blue"></div>
+            <div class="b1c2 space blue"></div>
+            <div class="b1c2 space blue"></div>
+            <div class="b1c2 space blue"></div>
+            <div class="b1c2 space blue"></div>
+            <div class="b1c2 space blue"></div>
+            <div class="b1c2 space blue"></div>
+            <div class="b1c2 space blue"></div>
+            <div class="b1c2 space blue"></div>
+          </div>
+          <div class="b2r2">
+            <div class="b1c2 blue"></div>
+            <div class="b1c2 space blue"></div>
+            <div class="b1c2 space blue"></div>
+            <div class="b1c2 space blue"></div>
+            <div class="b1c2 space blue"></div>
+            <div class="b1c2 space blue"></div>
+            <div class="b1c2 space blue"></div>
+            <div class="b1c2 space blue"></div>
+            <div class="b1c2 space blue"></div>
+          </div>
+        </div>
+      </div>
+      <div class="b3">
+        <div class="b3r">
+          <div class="b1c2 margin yellow"></div>
+        </div>
+        <div class="b3r">
+          <div class="b1c2 purple"></div>
+          <div class="b1c2 space lgreen"></div>
+          <div class="b1c2 space lgreen"></div>
+          <div class="b1c2 space lgreen"></div>
+          <div class="b1c2 space dpink"></div>
+          <div class="b1c2 space yellow"></div>
+        </div>
+        <div class="b3r">
+          <div class="b1c2 orange"></div>
+          <div class="b1c2 space purple"></div>
+          <div class="b1c2 space lgreen"></div>
+          <div class="b1c2 space lgreen"></div>
+          <div class="b1c2 space dpink"></div>
+          <div class="b1c2 space yellow"></div>
+        </div>
+        <div class="b3r">
+          <div class="b1c2 orange"></div>
+          <div class="b1c2 space purple"></div>
+          <div class="b1c2 space purple"></div>
+          <div class="b1c2 space lgreen"></div>
+          <div class="b1c2 space dpink"></div>
+          <div class="b1c2 space yellow"></div>
+        </div>
+        <div class="b3r">
+          <div class="b1c2 orange"></div>
+          <div class="b1c2 space orange"></div>
+          <div class="b1c2 space purple"></div>
+          <div class="b1c2 space purple"></div>
+          <div class="b1c2 space dpink"></div>
+          <div class="b1c2 space yellow"></div>
+        </div>
+        <div class="b3r">
+          <div class="b1c2 orange"></div>
+          <div class="b1c2 space orange"></div>
+          <div class="b1c2 space orange"></div>
+          <div class="b1c2 space purple"></div>
+          <div class="b1c2 space dpink"></div>
+          <div class="b1c2 space yellow"></div>
+        </div>
+        <div class="b3r">
+          <div class="b1c2 grey"></div>
+          <div class="b1c2 space grey"></div>
+          <div class="b1c2 space grey"></div>
+          <div class="b1c2 space grey"></div>
+          <div class="b1c2 space grey"></div>
+          <div class="b1c2 space grey"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-sec">
+      <div class="btr">
+        <div class="btc olive">
+          <p class="la">La</p>
+        </div>
+        <div class="btc olive"></div>
+        <div class="btc olive"></div>
+        <div class="btc olive"></div>
+        <div class="btc olive"></div>
+        <div class="btc olive"></div>
+        <div class="btc olive"></div>
+        <div class="btc olive"></div>
+        <div class="btc olive"></div>
+        <div class="btc olive"></div>
+        <div class="btc olive"></div>
+        <div class="btc olive"></div>
+        <div class="btc olive"></div>
+        <div class="btc olive"></div>
+      </div>
+      <div class="btr greenish">
+        <div class="btc"></div>
+        <div class="btc"></div>
+        <div class="btc"></div>
+        <div class="btc"></div>
+        <div class="btc"></div>
+        <div class="btc"></div>
+        <div class="btc">
+          <p>Am</p>
+        </div>
+        <div class="btc"></div>
+        <div class="btc"></div>
+        <div class="btc"></div>
+        <div class="btc"></div>
+        <div class="btc"></div>
+        <div class="btc"></div>
+        <div class="btc">
+          <p>No</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

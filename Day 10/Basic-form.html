@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form</title>
+</head>
+<body>
+        <form action="">
+            <input type="text" id="name">
+            <input type="number" id="age">
+            <select name="" id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            <input type="email" id="email">
+            <input type="number" id="mobile">
+            <input type="submit">
+        </form>
+</body>
+</html>
+
+<script>
+        document.querySelector("form").addEventListener("submit", myprofile);
+        function myprofile () {
+        event.preventDefault();
+        var name = document.querySelector("#name").value;
+        var age = document.querySelector("#age").value;
+        var gender = document.querySelector("#gender").value;
+        var email = document.querySelector("#email").value;
+        var mobile = document.querySelector("#mobile").value;
+        console.log(name, age, gender, email, mobile);
+        }
+</script>
